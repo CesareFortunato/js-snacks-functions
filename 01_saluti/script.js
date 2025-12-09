@@ -5,9 +5,16 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-function myGreeting(myName){
-    return "Ciao" + myName;
-}
+
+//funzione tradizionale
+
+/* function myGreeting(myName){
+    return "Ciao " + myName;
+}  */
+
+    //funzione arrow
+
+const myGreeting = (myName) => "Ciao " + myName;
 
 
 // Invoca la funzione qui e stampa il risultato in console
