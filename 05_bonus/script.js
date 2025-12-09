@@ -6,12 +6,33 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
-
+const dayTime = 15;
 
 // Dichiara la funzione qui.
 
 
+function myGreeting(myName) {
+    let Greetings;
+    if (dayTime < 13) {
+        Greetings = "buongiorno"
+    }
+    else if (dayTime > 17) {
+        Greetings = "buonasera"
+    }
+    else{
+         Greetings = "buon pomeriggio"
+    }
+
+    return Greetings + " " + myName
+}
+
+
+
 // Invoca la funzione qui e stampa il risultato in console
+
+const result = myGreeting(name);
+
+console.log(result);
 
 
 
